@@ -42,6 +42,14 @@ int main(int argc, char* argv[])
 	pthread_join(tid_2, NULL);
 	pthread_join(tid_3, NULL);
 
+	printf("Count: %i\n", num_of_args);
+	printf("Numbers: ");
+	for (i = 0; i < num_of_args; i++)
+	{
+		printf("%i ", list[i]);
+	}
+	printf("\n\n");
+
 	printf("The average is %f\n", average);
 	printf("The maximum is %d\n", maximum);
 	printf("The minimum is %d\n", minimum);
